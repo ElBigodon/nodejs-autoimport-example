@@ -1,11 +1,10 @@
 /**
- *
  * Problema de tipagem, mesmo o typescript sabendo que a função `express` é importado
- * não consegue reconhecer a tipagem do mesmo. Para burlar isso, adicionei a tipagem de forma manual.
+ * não consegue reconhecer a tipagem. Para solucionar isso, adicionei a tipagem de forma manual.
  */
 const server: Express = express();
 
-// Usando formado JSON para
+// Usando formado JSON para formatar o corpo da requisição
 server.use(express.json());
 
 // Passando um middleware
@@ -31,7 +30,7 @@ server.get('/', (req, res) => {
   });
 });
 
-// Mapeando rota
+// Iniciando a instancia
 server.listen(3000, () => {
   consola.info("Servidor rodando na porta '3000'");
   /**

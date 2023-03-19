@@ -11,7 +11,7 @@ export default defineConfig({
       dts: true,
       include: ['src/**/*.ts'],
       exclude: ['node_modules/', '**/*.js'],
-      dirs: ['src/**/*.ts'], // Importante, sem isso ele não reconhece os arquivos de e para onde será importados
+      dirs: ['src/**/*.ts'], // Importante, sem isso ele não reconhece os arquivos 'de para' onde será importados
       presets: [
         // 'presets' e 'imports' é aonde você importa as libs que você deseja utilizar.
         {
@@ -119,7 +119,7 @@ export default defineConfig({
   bundle: false,
   format: 'esm', // Formato ESModule (Mais recente)
   treeshake: true, // Remoção de código não utilizado
-  minify: false, // Reduz o tamanho do arquivo (Arquivo fica ilegível)
-  clean: true, // Limpa o diretório ao compilar
-  sourcemap: true, // Gerar arquivos '.js.map' para debug
+  minify: false, // Reduz o tamanho do arquivo (Arquivo de destino fica ilegível)
+  clean: true, // Limpa o diretório após compilar
+  sourcemap: true, // Gera arquivos '.js.map' para debug
 });
