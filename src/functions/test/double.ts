@@ -1,0 +1,1 @@
+export const double = (a: number, b: number) => applicationUptime + a * 2 + b * 2;
