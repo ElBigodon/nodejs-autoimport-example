@@ -25,5 +25,12 @@
   "dependencies": {
     "express": "^4.18.2",
     "unimport": "^3.0.3"
-  }
+  },
+  "os": [
+    "linux"
+  ],
+  "engines": {
+    "node": ">=18.15.*"
+  },
+  "engineStrict": true
 }
