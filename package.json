@@ -12,20 +12,23 @@
     "dev:watch": "cross-env NODE_ENV=development tsup --watch --onSuccess \"node dist/main.js\"",
     "dev:watch:debug": "cross-env DEBUG=1 npm run dev:watch"
   },
-  "keywords": ["unimport", "express"],
+  "keywords": [
+    "unimport",
+    "express"
+  ],
   "type": "module",
   "author": "ElBigodon",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^18.15.3",
-    "cross-env": "^7.0.3",
-    "unimport": "^3.0.3",
-    "tsup": "^6.6.3"
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "consola": "^2.15.3"
+    "unimport": "^3.0.3",
+    "tsup": "^6.7.0",
+    "consola": "^2.15.3",
+    "express": "^4.18.2"
   },
   "os": [
     "linux"
