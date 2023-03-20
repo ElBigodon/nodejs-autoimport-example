@@ -4,6 +4,10 @@ import unimport from 'unimport/unplugin';
 
 import consola from 'consola';
 
+if (process.platform !== 'linux') {
+  throw new Error('Use WSL ou Linux para executar essa aplicação! Caso contrário irá dar erro \'ERR_UNSUPPORTED_ESM_URL_SCHEME\'!')
+}
+
 export default defineConfig({
   entry: ['src/**/*.ts', '!**/*.{d,config}.ts', '!node_modules/'],
   esbuildPlugins: [
